@@ -2,7 +2,6 @@
 
 **SASHAKT** is a fun, interactive web application designed to educate children about their rights through engaging games, educational videos, and quizzes. It also features a Parental Hub to promote family bonding and awareness.
 
-![SASHAKT Banner](link-to-your-banner-image-if-any)
 
 ---
 
