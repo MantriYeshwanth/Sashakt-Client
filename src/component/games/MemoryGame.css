@@ -1,0 +1,69 @@
+.memory-game {
+    text-align: center;
+    background-color: #2f7bb1;
+    color: #f8f8f8;
+    padding: 80px 20px 20px; /* Prevents navbar overlap */
+    min-height: 100vh;
+  }
+  
+  .game-title {
+    margin-top: 20px; /* Avoids navbar overlap */
+    font-size: 24px;
+    color: #000000;
+  }
+  
+  .new-game {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .scoreboard {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* 🔹 Fixing Card Layout */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* 🔹 Card Styling */
+  .card {
+    width: 100px; /* Fixed size */
+    height: 120px;
+    perspective: 1000px;
+    position: relative;
+  }
+  
+  /* 🔹 Fixing Image Fit */
+  .card img {
+    width: 100%;  /* Ensures full fit */
+    height: 100%;
+    object-fit: cover; /* Prevents half-image issue */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  .popup {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .game-completed {
+    background: #28a745;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  

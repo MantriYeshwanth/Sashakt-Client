@@ -1,0 +1,158 @@
+/* Ensure navbar does not overlap puzzle */
+body {
+    padding-top: 70px; /* Adjust for navbar height */
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main container for puzzle */
+  .jigsaw-game {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Layout structure */
+  .jigsaw-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Enlarged puzzle section */
+  .jigsaw-puzzle {
+    flex: 2;
+    height: auto;
+    min-width: 600px;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Sidebar for reference image */
+  .jigsaw-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Image style */
+  .reference-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Score text */
+  .score-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Modal styling */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Centered Modal */
+  .jigsaw-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Buttons */
+  .next-button, .close-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .next-button:hover, .close-button:hover {
+    background: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .jigsaw-container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .jigsaw-puzzle {
+      width: 100%;
+      min-width: 90%;
+      height: auto;
+    }
+  
+    .jigsaw-sidebar {
+      order: -1;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .reference-image {
+      max-width: 250px;
+    }
+  
+    .score-text {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .jigsaw-puzzle {
+      min-width: 100%;
+      height: auto;
+    }
+  
+    .reference-image {
+      max-width: 200px;
+    }
+  
+    .jigsaw-modal {
+      width: 80%;
+    }
+  
+    .next-button, .close-button {
+      font-size: 16px;
+      padding: 8px 12px;
+    }
+  }
+  

@@ -1,0 +1,77 @@
+.word-scramble {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #98a0e7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.word-scramble h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hint {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.scrambled-word {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #cd4aee; /* Matches LearningPage button color */
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #cd4aee, #e03fb0); /* Matches LearningPage */
+  color: rgb(129, 92, 232);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}

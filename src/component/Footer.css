@@ -1,0 +1,56 @@
+/* AppFooter.css */
+
+.app-footer {
+    background-color: #010203;
+    color: #ecf0f1;
+    padding: 30px 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-links {
+    display: flex;
+  }
+  
+  .footer-link-group {
+    margin-right: 50px;
+  }
+  
+  .footer-link-group h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #3498db;
+  }
+  
+  .footer-link-group ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-link-group a {
+    text-decoration: none;
+    color: #ccd2d8;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    display: block;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link-group a:hover {
+    color: #e7714d;
+  }
+  
+  .footer-info {
+    text-align: right;
+  }
+  
+  .footer-info p {
+    font-size: 1.8rem;
+    margin: 8px 0;
+  }

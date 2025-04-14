@@ -1,0 +1,262 @@
+.faq-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px 40px;
+  position: relative;
+}
+
+.faq-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/images/bade.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.faq-content {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-weight: 700;
+}
+
+.faq-title {
+  text-align: center;
+  font-weight: 700;
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.faq-input-container {
+  width: 70%;
+  position: relative;
+  margin: 0 auto 30px;
+}
+
+.faq-input {
+  width: 100%;
+  height: 50px;
+  padding: 10px 40px 10px 15px;
+  transition: 0.2s linear;
+  border: 2.5px solid #333;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #e8f351;
+  border-radius: 8px;
+  outline: none;
+}
+
+.faq-input:focus {
+  outline: none;
+  border: 0.5px solid #333;
+  box-shadow: -5px -5px 0px #333;
+}
+
+.faq-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+.faq-input-container:hover > .faq-icon {
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.1);
+  }
+}
+
+.faq-accordion {
+  width: 100%;
+}
+
+.faq-accordion-content {
+  max-height: 500px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding-right: 10px;
+}
+
+.faq-accordion-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.faq-accordion-content::-webkit-scrollbar-thumb {
+  background-color: #566536;
+  border-radius: 10px;
+}
+
+.faq-accordion-content::-webkit-scrollbar-track {
+  background-color: #e8f351;
+  border-radius: 10px;
+}
+
+.faq-item {
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question-title {
+  margin: 1.4rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.faq-toggle-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.faq-icon-up {
+  display: none;
+}
+
+.faq-answer {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  display: none;
+  color: #555;
+  padding: 0 0 15px;
+}
+
+.faq-show .faq-answer {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.faq-show .faq-icon-up {
+  display: inline;
+}
+
+.faq-show .faq-icon-down {
+  display: none;
+}
+
+.faq-rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.faq-no-results {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.faq-oops {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .faq-title {
+    font-size: 2.2rem;
+  }
+
+  .faq-input-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 2rem;
+  }
+
+  .faq-input-container {
+    width: 90%;
+  }
+
+  .faq-question-title {
+    font-size: 1.1rem;
+  }
+
+  .faq-answer {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-content {
+    padding: 20px;
+  }
+
+  .faq-title {
+    font-size: 1.8rem;
+  }
+
+  .faq-input-container {
+    width: 100%;
+  }
+
+  .faq-input {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .faq-question-title {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .faq-toggle-btn {
+    font-size: 1.2rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}

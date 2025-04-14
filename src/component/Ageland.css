@@ -1,0 +1,133 @@
+.ageland-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .ageland-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/public/images/bade.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .ageland-content {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .ageland-header {
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ageland-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .ageland-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .ageland-header h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .ageland-form-container {
+    background: rgba(231, 213, 216, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+  }
+  
+  .ageland-error {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #000000;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border-left: 4px solid #050404;
+  }
+  
+  .ageland-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ageland-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+  }
+  
+  .ageland-input:focus {
+    border-color: #ff6b8b;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 107, 139, 0.2);
+  }
+  
+  .ageland-input.invalid {
+    border-color: #d32f2f;
+    background-color: rgba(255, 235, 238, 0.5);
+  }
+  
+  .ageland-button-container {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .ageland-header h1 {
+      font-size: 2rem;
+    }
+  
+    .ageland-header h3 {
+      font-size: 1.2rem;
+    }
+  
+    .ageland-header h4 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ageland-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .ageland-form-container {
+      padding: 20px;
+    }
+  }
+  
+  

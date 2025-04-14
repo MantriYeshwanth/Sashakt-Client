@@ -1,0 +1,65 @@
+.gaming-page {
+  height: 100vh;
+  width: 100vw; /* Ensure full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Prevent any overflow issues */
+}
+
+.backgroundimg {
+  position: fixed; /* Changed from absolute for better full-screen coverage */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/images/wallpaper.jpg"); /* Adjusted path */
+  background-size: cover; /* Ensures image covers entire area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  z-index: -1; /* Keep behind other elements */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.game-link {
+  text-decoration: none;
+}
+
+.game-link button {
+  background-color: rgb(247, 241, 241) !important; /* Force background */
+  color: rgb(16, 7, 7) !important; /* Ensure text visibility */
+  border: 1px solid white; /* Optional: Add a white border for contrast */
+}
+
+.game-link button:hover {
+  background-color: #000000 !important; /* Black on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .button-line {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .game-link button {
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+    font-size: 0.9rem; /* Slightly smaller text */
+  }
+}

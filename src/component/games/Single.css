@@ -1,0 +1,87 @@
+.card {
+   position: relative;
+   width: 150px; /* Smaller width for the card */
+   height: 180px; /* Smaller height for the card */
+ }
+ 
+ .card img {
+   width: 100%;
+   height: 100%;
+   display: block;
+   border: 2px solid #333; /* Dark border */
+   border-radius: 6px;
+   
+ }
+ 
+ /* Front card - picture */
+ .card .front {
+   transform: rotateY(90deg);
+   transition: all ease-in 0.2s;
+   position: absolute;
+ }
+ 
+ .card .front,
+ .card .back {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   backface-visibility: hidden;
+ }
+
+ .flipped .front {
+   transform: rotateY(0deg);
+   transition-delay: 0.2s;
+ }
+ 
+ /* Back of card - cover */
+ .card .back {
+   transition: all ease-in 0.2s;
+   transition-delay: 0.2s;
+ }
+ 
+ .flipped .back {
+   transform: rotateY(90deg);
+   transition-delay: 0s;
+ }
+ 
+ .App {
+   max-width: 600px; /* Adjusted max-width */
+   margin: 40px auto;
+   text-align: center; /* Center-align text */
+ }
+ 
+ .buttonY {
+   background: #ff7eb9; /* Lovely pink background */
+   border: 2px solid #ff3e7e; /* Slightly darker border */
+   padding: 8px 16px; /* Increased padding */
+   border-radius: 4px;
+   color: #fff;
+   font-weight: bold;
+   cursor: pointer;
+   font-size: 1.2em; /* Slightly larger font size */
+   margin-top: 20px; /* Added margin to the top */
+ }
+ 
+ .buttonY:hover {
+   background: #ff3e7e; /* Darker pink on hover */
+   color: #fff;
+ }
+ 
+ /* .card-grid {
+   margin-top: 40px;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-gap: 15px; 
+ } */
+
+ .card-grid {
+   margin-top: 40px;
+   display: grid;
+   grid-template-columns: repeat(6, minmax(150px, 1fr));
+   gap: 20px; /* Increased gap for space between cards */
+   justify-content: center; /* Center-align the cards */
+   max-width: 900px; /* Adjusted max-width for centering on larger screens */
+   margin: 0 auto; /* Center the entire card grid */
+ }
+ 
+ 

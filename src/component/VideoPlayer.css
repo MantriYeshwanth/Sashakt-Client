@@ -1,0 +1,34 @@
+.VideoPlayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .VideoPlayer .react-player {
+    margin: 20px;
+  }
+  
+  .VideoPlayer .react-player .video-react-controls {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  
+  .VideoPlayer .react-player .video-react-play-control {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .VideoPlayer .react-player .video-react-volume-menu-button {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .VideoPlayer .react-player .video-react-slider {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+  }
+  
+  .VideoPlayer .react-player .video-react-fullscreen-button {
+    color: white;
+    font-size: 20px;
+  }
