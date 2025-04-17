@@ -22,13 +22,17 @@ const SimpleLoginPage = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:4000/authenticate", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ nickname }),
-      });
+      // const response = await fetch("http://localhost:4000/authenticate", {
+      const response = await fetch(
+        "https://sashakt-backend-lj9s.onrender.com/authenticate",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ nickname }),
+        }
+      );
 
       const result = await response.json();
 

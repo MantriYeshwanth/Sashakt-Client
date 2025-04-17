@@ -6,7 +6,9 @@ const VideoDisplay = () => {
 
   const fetchVideoUrl = async () => {
     try {
-      const response = await fetch("http://localhost:4000/videos");
+      const response = await fetch(
+        "https://sashakt-backend-lj9s.onrender.com/videos"
+      );
       if (response.ok) {
         const videoData = await response.json();
         setVideoUrl(videoData.url);
