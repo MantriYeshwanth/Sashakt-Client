@@ -21,11 +21,16 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      // console.log(formData);
+      const response = await fetch(
+        "https://sashakt-backend-lj9s.onrender.com/contact",
+        {
+          // const response = await fetch("http://localhost:4000/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
       if (response.ok) openModal();
       else console.error("Failed to submit form");
     } catch (error) {

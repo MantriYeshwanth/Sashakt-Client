@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useHistory, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import { useHistory, Link } from 'react-router-dom';
 
 const VideoDisplay = () => {
   const [videoUrl, setVideoUrl] = useState("");
@@ -30,7 +31,7 @@ const VideoDisplay = () => {
   const extractVideoId = (url) => {
     // Extract the video ID from a YouTube URL
     const match = url.match(
-      /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/
+      /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/
     );
     return (match && match[1]) || "";
   };
