@@ -54,13 +54,13 @@
   }
   
   .popup {
-    background: #444;
+    background: #121111;
     padding: 20px;
     border-radius: 10px;
   }
   
   .game-completed {
-    background: #28a745;
+    background: #0a0c0b;
     color: white;
     padding: 20px;
     margin-top: 20px;
