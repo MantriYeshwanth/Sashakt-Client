@@ -164,7 +164,7 @@ export default function MemoryGame() {
           >
             <img
               className="card-image"
-              src={card.flipped ? card.src : "/images/Scratch.jpg"}
+              src={card.flipped ? card.src : "/images/scratch.jpg"}
               alt="memory card"
             />
           </div>

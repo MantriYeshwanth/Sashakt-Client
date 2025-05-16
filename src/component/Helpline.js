@@ -45,7 +45,7 @@ const Helpline = () => {
         <>
             <div style={containerStyle}>
                 <div style={imageContainerStyle}>
-                    <img src="/images/1098.jpg" alt="Your Image" style={imgStyle} />
+                    <img src="/images/1098.jpg" alt="Your_image" style={imgStyle} />
                 </div>
                 <div style={contentContainerStyle}>
                     <div style={{ position: 'absolute', top: '70%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '2', textAlign: 'center' }}>
