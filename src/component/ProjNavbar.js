@@ -42,7 +42,7 @@ const PNavbar = () => {
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active-link" : ""}`
                 }
-                to="/age12"
+                to="/home"
               >
                 Home
               </NavLink>

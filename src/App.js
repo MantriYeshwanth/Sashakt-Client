@@ -41,8 +41,8 @@ function App() {
         {/* <Route path='/ls' element={<LandingPage />} /> */}
         <Route path="Login" element={<SimpleLoginPage />} />
         <Route path="/register" element={<NicknameGenerator />} />
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/age12" element={<AgeTwelveAndMore />} />
+        <Route path="/" element={<AgeTwelveAndMore />} />
+        <Route path="/home" element={<AgeTwelveAndMore />} />
         <Route path="/about" element={<About />} />
         <Route path="/parental" element={<ParentalH />} />
         <Route path="/contact" element={<Contact />} />
