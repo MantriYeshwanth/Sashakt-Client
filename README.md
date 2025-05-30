@@ -75,7 +75,7 @@
 
 **Hosting & Deployment:**
 - GitHub (Code Repository)
-- [Frontend] Vercel 
+- [Frontend] Vercel
 - [Backend] Render
 
 ---
